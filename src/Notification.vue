@@ -8,9 +8,11 @@
     :leave-active-class="leaveClass"
     @after-leave="afterLeave"
   >
-  <div :class="['notification', 'animated', type ? `is-${type}` : '']" v-if="show" v-html="message">
+  <div :class="['notification', 'animated', type ? `is-${type}` : '']" v-if="show">
     <button class="delete touchable" @click="close()"></button>
     <div class="title is-5" v-if="title">{{ title }}</div>
+    {{ message }}
+    <span v-html="APIError"></span>
   </div>
 </transition>
 </template>
@@ -24,6 +26,7 @@ export default {
     type: String,
     title: String,
     message: String,
+    APIError: String,
     direction: {
       type: String,
       default: 'Right'

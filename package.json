@@ -1,6 +1,6 @@
 {
   "name": "xereda-vue-bulma-notification",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Notification component for Vue Bulma (based on vue-bulma-notification component)",
   "main": "src/Notification.vue",
   "peerDependencies": {
