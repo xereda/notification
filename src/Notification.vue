@@ -8,10 +8,9 @@
     :leave-active-class="leaveClass"
     @after-leave="afterLeave"
   >
-  <div :class="['notification', 'animated', type ? `is-${type}` : '']" v-if="show">
+  <div :class="['notification', 'animated', type ? `is-${type}` : '']" v-if="show" v-hmlt="message">
     <button class="delete touchable" @click="close()"></button>
     <div class="title is-5" v-if="title">{{ title }}</div>
-    {{ message }}
   </div>
 </transition>
 </template>
