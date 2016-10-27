@@ -1,7 +1,7 @@
 {
-  "name": "vue-bulma-notification",
-  "version": "1.1.0",
-  "description": "Notification component for Vue Bulma",
+  "name": "xereda-vue-bulma-notification",
+  "version": "1.1.1",
+  "description": "Notification component for Vue Bulma (based on vue-bulma-notification component)",
   "main": "src/Notification.vue",
   "peerDependencies": {
     "bulma": "^0.2",
@@ -16,6 +16,6 @@
     "vue-bulma-notification",
     "notification"
   ],
-  "author": "Fangdun Cai <cfddream@gmail.com>",
+  "author": "Jackson Ricardo Schroeder <jacksonrs@gmail.com>",
   "license": "MIT"
 }
