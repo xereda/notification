@@ -8,7 +8,7 @@
     :leave-active-class="leaveClass"
     @after-leave="afterLeave"
   >
-  <div :class="['notification', 'animated', type ? `is-${type}` : '']" v-if="show" v-hmlt="message">
+  <div :class="['notification', 'animated', type ? `is-${type}` : '']" v-if="show" v-html="message">
     <button class="delete touchable" @click="close()"></button>
     <div class="title is-5" v-if="title">{{ title }}</div>
   </div>
@@ -19,7 +19,7 @@
 import Vue from 'vue'
 
 export default {
-
+  name: 'notification',
   props: {
     type: String,
     title: String,
