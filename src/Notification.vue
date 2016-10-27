@@ -147,6 +147,7 @@ export default {
 
 .APIError {
   font-family: monospace;
+  font-size: .9em;
 }
 
 </style>
