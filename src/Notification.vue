@@ -12,7 +12,7 @@
     <button class="delete touchable" @click="close()"></button>
     <div class="title is-5" v-if="title">{{ title }}</div>
     {{ message }}
-    <span v-html="APIError"></span>
+    <span class="APIError" v-html="APIError"></span>
   </div>
 </transition>
 </template>
@@ -144,4 +144,10 @@ export default {
   transform: translate3d(0, 0, 0);
   pointer-events: all;
 }
+
+.APIError {
+  font-family: monospace;
+  font-size: .7em;
+}
+
 </style>
